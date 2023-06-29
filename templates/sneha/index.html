@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>Tech Fest | SRKR COLLEGE</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Tech Fset is the technical fest of Amity University" />
+        <meta name="keywords" content="tech, fest, amity, university, college, events, workshops, seminars" />
+        <meta name="author" content="Vinit Shahdeo" />
+        {% comment %} <link rel="shortcut icon" href="{% static 'favicon.png'%}"/>  {% endcomment %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/demo.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style_home.css' %}" />
+		<script type="text/javascript" src="{% static 'js/modernizr.custom.86080.js' %}"></script>
+        {% comment %} <link rel="stylesheet" href="{% static 'http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css' %}"> {% endcomment %}
+<style>
+        body{
+           text-align: center;
+           font-family: Constantia, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+           background-image:url("https://cdn.whataftercollege.com/wp-content/uploads/2019/03/Cover-image-10-1024x535.jpg");
+           background-size:cover; 
+           height:100vh;
+           
+           {% comment %} background: rgb(63,94,251);
+           background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(36,33,217,0.499124649859944) 100%); {% endcomment %}
+	font-weight: 400;
+	font-size: 15px;
+	color: #aa3e03;
+	overflow-y: scroll;
+	overflow-x: hidden;
+        } 
+.main{
+    padding-top: 150px;
+    font-size:50px;
+    {% comment %} color:rgb(227, 112, 131); {% endcomment %}
+    color:pink;
+    
+}
+
+.logo{
+    font-family:'Times New Roman', Times, serif raleway, arial;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    margin-top:60px;
+}
+a:hover{
+    color: orange;
+}
+.register{
+  color:yellow;
+  font-size:300%;
+}
+</style>
+    </head>
+    <body id="page">
+        
+            <!-- Codrops top bar -->
+            <div class="codrops-top">
+              <a href="http://127.0.0.1:8000/contactus" target="_blank">
+                <strong>Contact</strong>
+        </a>
+                
+                <a href="http://127.0.0.1:8000/event">
+                    <strong>Events</strong>
+                  </a>
+                   
+                <a href="http://127.0.0.1:8000/info">
+                  <strong>About</strong>
+                  </a></div>
+            <div class="main"><h2>TECH FEST</h2></div>
+            <div class="logo">SRKR COLLEGE<br></div><br><br>
+            <a class="register"href="http://127.0.0.1:8000/register">Register</a>
+        
+    
+            </header>
+        
+    </body>
+   
+</html>

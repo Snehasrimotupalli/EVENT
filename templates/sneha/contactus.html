@@ -1,0 +1,82 @@
+{% load static%}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="{% static 'css/contact.css'%}" />
+    <style>
+      .codrops-top a{
+        padding: 0px 10px;
+        letter-spacing: 1px;
+        color: black;
+        display: block;
+        text-align: center;
+        font-size: 150%;
+        margin-top:20px;
+        text-decoration: none;
+        float:left;
+      }
+        .codrops-top a:hover{
+          color:green;
+      }
+  
+      
+      
+    </style>
+</head>
+<body>
+<div id="ContactUs">
+  <div class="codrops-top">
+    <a href="http://127.0.0.1:8000/index" target="_blank">
+      <strong>Home</strong>
+</a>
+      
+      <a href="http://127.0.0.1:8000/event">
+          <strong>Events</strong>
+        </a>
+         
+      <a href="http://127.0.0.1:8000/info">
+        <strong>About</strong>
+        </a></div>
+  <h1>Contact Us</h1>
+  
+  <form method="POST" action="contactus">
+    {% csrf_token %}
+    <div class="form-shape">
+      <label for="name">Name</label>
+      <input type="text" name="myName"
+        id="name"
+        placeholder="Enter your Name">
+    </div>
+    <div class="form-shape">
+      <label for="email">Email-Id</label>
+      <input type="email" name="myEmail"
+        id="email"
+        placeholder="Enter your email">
+    </div>
+    <div class="form-shape">
+      <label for="pho">Phone Number</label>
+      <input type="phone" name="myPhone"
+        id="pho"
+        placeholder="Enter your Phone no">
+    </div>
+    
+    <div class="form-shape">
+      <label for="message">
+        Your message
+      </label>
+      <textarea name="mesg" id="message"
+        cols="30" rows="10">
+      </textarea>
+    </div>
+    <button class="custom-button">Submit</button>
+          
+  </form>
+</div>
+</div>
+</div>
+</body>
+</html>
